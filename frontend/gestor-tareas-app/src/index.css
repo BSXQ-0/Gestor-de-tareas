@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .whiteboard-texture {
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  .tilted-card {
+    transform: rotate(-0.5deg);
+  }
+  
+  .marker-body {
+    background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  }
+
+  .whiteboard-bg {
+    background: #f8f9fa;
+  }
+
+  .dark .whiteboard-bg {
+    background: #0c141d;
+  }
+
+  .grid-lines-bg {
+    background-image:
+      linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .dark .grid-lines-bg {
+    background-image:
+      linear-gradient(to right, rgba(148, 163, 184, 0.12) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+  }
+
+  .post-it {
+    position: absolute;
+    border-radius: 16px;
+  }
+
+  .post-it-shadow {
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.18);
+  }
+
+  .bg-postit-red {
+    background: #fecaca;
+  }
+
+  .bg-postit-yellow {
+    background: #fef08a;
+  }
+
+  .bg-postit-green {
+    background: #bbf7d0;
+  }
+
+  .font-display {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  .font-handwritten {
+    font-family: 'Caveat', 'Comic Sans MS', cursive;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
